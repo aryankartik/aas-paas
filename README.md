@@ -4,7 +4,7 @@ We often miss out on local happenings — whether it's a community festival, a c
 
 It’s a simple yet practical web platform that keeps you informed about events, announcements, and live weather updates from your surroundings.  
 
-This project was developed as part of our **capstone project**, with the aim of making local information easily accessible through a clean and user-friendly interface.
+This project was developed as part of our **college capstone project**, with the aim of making local information easily accessible through a clean and user-friendly interface.
 
 
 ---
@@ -58,10 +58,10 @@ We are a team of 4 students who built Aas-Paas collaboratively:
 
 | Name             | Contribution                  |
 |------------------|-------------------------------|
-| **Aryan Kartik** | Frontend design and styling         |
-| **Vipul**         | Full-stack integration    |
-| **Kaushal**       | Announcement database & layout |
-| **Anurag**        | Announcement database & layout |
+| **Aryan Kartik** | Frontend Design & Styling         |
+| **Vipul**         | Full-stack Integration    |
+| **Kaushal**       | Announcement Database & Layout |
+| **Anurag**        | Announcement Database & Layout |
 
 ---
 
