@@ -10,7 +10,7 @@ We built this platform as our **major college project**, aiming to solve a real-
 
 ## 🚀 Live Website
 
-👉 [Try It Here](https://aas-pass-major-project.onrender.com/)
+👉 [Explore Aas-Paas Live](https://aas-pass-major-project.onrender.com/)
 
 ---
 
@@ -56,8 +56,8 @@ We are a team of 4 students who built Aas-Paas collaboratively:
 
 | Name             | Contribution                  |
 |------------------|-------------------------------|
-| **Vipul Kataria** | Full-stack integration         |
-| **Aryan**         | Frontend design and styling    |
+| **Aryan Kartik** | Frontend design and styling         |
+| **Vipul**         | Full-stack integration    |
 | **Kaushal**       | Announcement database & layout |
 | **Anurag**        | Announcement database & layout |
 
@@ -98,7 +98,7 @@ aas-pass-major-project/
 ## 📬 Contact
 
 Want to give feedback or collaborate?  
-Feel free to [reach out](mailto:your.email@example.com) or connect on [GitHub](https://github.com/yourusername)!
+Feel free to [reach out](mailto:aryan_24a12res148@iitp.ac.in) or connect on [GitHub](https://github.com/aryankartik)!
 
 ---
 
