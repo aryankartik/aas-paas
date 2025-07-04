@@ -1,0 +1,40 @@
+<%layout("./layout/boilerplate.ejs")%>
+
+<body class="new-body">
+    
+    
+    <div class="card-container ">
+        
+        <%for (city of cityChoose){%>
+            
+            <div class="card mb-4 mt-4 " id="card-epaper">
+                <img src="<%=city.image%>" class="card-img-top image-of-card" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Event posted by: <%=city.owner.username%></h5>
+                  <h5 class="card-title"><%=city.title%></h5>
+                  <p class="card-text"><b>Description: </b><%=city.description%></p>
+                  <p class="card-text"><b>Location: </b><%=city.location%></p>
+                  <p class="card-text"><b>Dated:</b> <%=city.date%></p>
+                  <p class="card-text"><b>Time:</b> <%=city.time%></p>
+                  <p class="card-text"><b>We are waiting for you at:</b> <%=city.city%></p>
+                  
+                  
+                </div>
+                    
+                <%if(curUser && curUser._id.equals(city.owner._id)){%>
+                <div class="btn-delete-local">
+                    <form method="post" action="/local/<%=city.city%>/<%=city._id%>/delete?_method=DELETE" >
+                        <button class="btn btn-dark">Delete</button>
+                    </form>
+                
+                    <form method="get" action="/local/<%=city.city%>/<%=city._id%>/edit" >
+                        <button class="btn btn-warning">Edit</button>
+                    </form>
+                </div>
+                <%}%>
+            </div>
+            <%}%>
+    </div>
+</body>
+
+

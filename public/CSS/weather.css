@@ -1,0 +1,545 @@
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+}
+
+.search-form input {
+  padding: 0.7rem;
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.search-form button {
+  padding: 0.7rem 1rem;
+  margin-left: 0.5rem;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #ffcc00;
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: #2b2b2b;
+  border: 2px solid #ffd700;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.card h2 {
+  margin-bottom: 0.8rem;
+  color: #ffd700;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+.error {
+  color: #ff4c4c;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #212121;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Container - Flexbox for proper alignment */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hindi Logo Styling */
+.logo {
+    font-family: "Lexend", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Separator Styling */
+.separator {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffcc00;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-family: "Lexend", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffcc00;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation for Navbar Links */
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.signin-btn i {
+    color: #FFD700;
+    margin-right: 2px;
+}
+
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body
+.social-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        border-top: 1px solid #444;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #menu-toggle:checked+.hamburger+.nav-links {
+        display: flex;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .social-links {
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+/* Category Bar */
+.category-bar {
+    background: #323232;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Horizontal List - Equally Spaced */
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Category Items */
+.categories li {
+    flex: 1;
+    text-align: center;
+}
+
+/* Category Links */
+.categories a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Underline Animation */
+.categories a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Hover Effect - Underline Expands */
+.categories a:hover::after {
+    width: 100%;
+}
+
+/* Hover Effect - Text Color Change */
+.categories a:hover {
+    color: #ffcc00;
+}
+
+.categories i {
+    margin-right: 2px;
+    font-size: 18px;
+    color: #FFD700; /* Gold color for icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories li {
+        flex: 50%;
+    }
+
+    .categories a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* General Footer Styles */
+.footer {
+    margin-top: auto;
+    background: #222;
+    /* Matching Navbar */
+    color: white;
+    padding: 30px 20px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Animated Text */
+.advertise-text {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffcc00;
+    transition: transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+/* Hover Animation on Footer */
+.advertise-text:hover {
+    transform: translateY(-4px);
+    /* Moves up slightly */
+    letter-spacing: 0.5px;
+    /* Adds slight spacing */
+}
+
+/* Mail */
+.mail-text {
+    font-size: 16px;
+}
+
+.mail-text a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.mail-text a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Right Section - Horizontal Links */
+.footer-right {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Link Styles */
+.footer-right a {
+    position: relative;  /* This is required for ::after to work */
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block; /* Ensures proper rendering */
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+.footer-right i {
+    margin-right: 2px;
+    font-size: 18px;
+    color: #FFD700; /* Gold color for icons */
+}
+
+
+
+/* Underline Animation - Starts from Center */
+.footer-right a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;  /* Moves underline closer */
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.footer-right a:hover {
+    color: #ffcc00;
+}
+
+.footer-right a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.footer:hover .copyright {
+    opacity: 1;
+    /* Becomes more visible */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    /* margin-right: 10px; */
+}
+
+.logo-text-group {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #e8e5de;
+    text-transform: uppercase;
+}
+
+.logo-tagline {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #fbb02e;
+    /* color: #FFD54F; */
+    margin-top: 2px;
+    letter-spacing: 2px;
+    /* text-transform: lowercase; */
+}
+
+.logo-separator {
+    width: 2px;
+    height: 48px;
+    background-color: #e8e5de;; /* Gold line */
+    margin-top: 3px;
+    margin-right: 12px; /* space around the line */
+    border-radius: 1px;
+}

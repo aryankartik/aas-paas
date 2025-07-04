@@ -1,0 +1,35 @@
+<%layout("./layout/boilerplate.ejs")%>
+<body class="signup-body">
+    
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <br>
+        <h1>SignUp for Aas-Pass</h1>
+        <br>
+        <form action="/signup" method="POST" >
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="enter your username" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a valid username.</div>
+            </div><br>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="enter your email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a valid email.</div>
+            </div><br>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" name="password" class="form-control" id="password" placeholder="enter your password" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a strong password </div>
+            </div><br>
+            <button class="btn btn-dark">SignUp</button>
+        </form>
+        <br>
+    </div>
+</div>
+
+</body>

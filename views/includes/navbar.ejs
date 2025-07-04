@@ -1,0 +1,59 @@
+<!-- Navigation Bar -->
+<nav class="navbar">
+        <div class="logo-container">
+            
+                <img src="/logo.png" alt="Aas Paas Logo" class="logo-icon">
+
+                <!-- Separator Bar -->
+                <div class="logo-separator"></div>
+
+                <div class="logo-text-group">
+                    <div class="logo-title">AASPAAS</div>
+                    <div class="logo-tagline">FIND WHAT'S AROUND YOU!</div>
+                </div>
+            
+        </div>
+    
+    
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <%if(!curUser){%>
+            <li><a href="/signup" class="signin-btn"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            <li><a href="/login" class="signin-btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        <%}%>
+        <%if(curUser){%>
+            <li><a href="/logout" class="signin-btn"><i class="fas fa-sign-in-alt"></i> Logout</a></li>
+        <%}%>
+        
+
+        <li class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Category Bar -->
+<section class="category-bar">
+    <ul class="categories">
+        <li><a href="/epaper"><i class="fas fa-newspaper"></i> E-Paper</a></li>
+        
+        <li><a href="/sports"><i class="fa-solid fa-basketball"></i> Sports</a></li>
+        <li><a href="/tech"><i class="fas fa-microchip"></i> Tech</a></li>
+        <li><a href="/local"><i class="fa-solid fa-map-location-dot"></i> Local</a></li>
+        <li><a href="/weather"><i class="fa-solid fa-cloud"></i> Weather</a></li>
+        <!-- <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i> More</a></li> -->
+    </ul>
+</section>

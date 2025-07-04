@@ -1,0 +1,47 @@
+<%layout("./layout/boilerplate.ejs")%>
+
+<script>
+  function filterCities() {
+    const input = document.getElementById("citySearch").value.toLowerCase();
+    const cityDivs = document.querySelectorAll(".city-div");
+
+    cityDivs.forEach(div => {
+      const cityName = div.textContent.toLowerCase();
+      if (cityName.includes(input)) {
+        div.style.display = "flex";
+      } else {
+        div.style.display = "none";
+      }
+    });
+  }
+</script>
+
+<body class="new-body">
+    <br>
+    <div class="container mb-4 d-flex justify-content-center">
+  <div class="search-wrapper d-flex align-items-center">
+    <span class="search-icon">🔍</span>
+    <input
+      type="text"
+      class="custom-search"
+      id="citySearch"
+      placeholder="Enter your city..."
+      onkeyup="filterCities()"
+    />
+  </div>
+</div>
+
+  <br>
+  <h1 class="city-head">Want to find events Aas-Pass? Please choose your city...</h1>
+  <br>
+  <div class="showLocal-main">
+    <% for (city of cities) { %>
+      <div class="city-div">
+        <form action="/local/<%= city %>" method="get">
+          <a href="/local/<%= city %>" class="text-of-local"><%= city %></a>
+        </form>
+      </div>
+    <% } %>
+  </div>
+  
+</body>

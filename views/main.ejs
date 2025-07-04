@@ -1,0 +1,92 @@
+<%layout("./layout/boilerplate.ejs")%>
+<body >
+  
+
+  <!-- Welcome Section -->
+  <section class="feature-section">
+    <h1 class="main-heading">Welcome to Aas-Paas!</h1><br>
+   
+
+    <h3 class="subheading">Here's What You Can Do :</h3>
+    <ul class="feature-list">
+      <li>📅 Submit Your Events</li>
+      <li>📰 Read the E-Paper Daily</li>
+      <li>🏏 Catch Up on Sports News</li>
+      <li>💻 Explore Latest Tech Buzz</li>
+      <li>📍 Find Local Events Around You</li>
+    </ul>
+  </section>
+
+  <!-- Daily Highlights -->
+  <section class="highlight-section">
+    <h3 class="section-subheading">✨ Daily Highlights</h3>
+    <div class="sticky-board">
+      <div class="note-wrapper">
+        <div class="note-box">Believe in your power to do great things!</div>
+        <div class="note-title">💬 Quote of the Day</div>
+      </div>
+      <div class="note-wrapper">
+        <div class="note-box">Start where you are. Use what you have. Do what you can.</div>
+        <div class="note-title">🧠 Thought of the Day</div>
+      </div>
+      <div class="note-wrapper">
+        <div class="note-box">June 20 was the World's longest day in the Northern Hemisphere.</div>
+        <div class="note-title">📅 On This Day</div>
+      </div>
+      <div class="note-wrapper">
+        <div class="note-box">Did you know? Honey never spoils.</div>
+        <div class="note-title">📌 Fact of the Day</div>
+      </div>
+      <div class="note-wrapper">
+        <div class="note-box">Push yourself, because no one else is going to do it for you.</div>
+        <div class="note-title">🚀 Motivation</div>
+      </div>
+      <div class="note-wrapper">
+        <div class="note-box">Smile today — it’s contagious 😄</div>
+        <div class="note-title">😊 Smile Prompt</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Our Users Say -->
+  <section class="testimonial-section">
+    <h3 class="section-subheading">What Our Users Say :</h3>
+    <div class="testimonial-board">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Aas-Paas brings all local buzz in one place. Super handy and vibrant!"</p>
+        <p class="testimonial-user">– Priya Sharma, Community Member</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Love the clean design and daily highlights. Makes my mornings better!"</p>
+        <p class="testimonial-user">– Raj Mehta, Student</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"An innovative platform for events and news around us. Much needed!"</p>
+        <p class="testimonial-user">– Sneha Verma, Event Organizer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const noteWrappers = document.querySelectorAll('.note-wrapper');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = [...noteWrappers].indexOf(entry.target);
+            entry.target.style.transitionDelay = `${index * 100}ms`;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      noteWrappers.forEach((el) => observer.observe(el));
+    });
+  </script>
+
+
+
+
+</body>

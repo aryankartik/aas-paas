@@ -1,0 +1,35 @@
+<%layout("./layout/boilerplate.ejs")%>
+<body class="new-body ">
+    <div class="card-container">
+    <%for (paper of allPaper){%>
+    <!-- <div class="card mb-3 row" style="max-width: 540px;"> -->
+        <div class="card mb-4 mt-4"  id="card-epaper">
+            <img src="<%=paper.image%>" class="card-img-top image-of-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=paper.title%></h5>
+              <p class="card-text"><b>Description:</b> <%=paper.description%></p>
+              <p class="card-text"><b>Location :</b> <%=paper.location%></p>
+              <p class="card-text"><b>Dated :</b> <%=paper.date%></p>
+              <p class="card-text"><b>Time :</b> <%=paper.time%></p>
+              <p class="card-text"><b>We are waiting for you at:</b> <%=paper.city%></p>
+              
+            </div>
+        </div>
+    
+      <%}%>
+    </div>
+
+
+
+    <!-- <ul>
+        <%for (paper of allPaper){%>
+        <li><%=paper.title%>
+        <br>description : <%=paper.description%>
+        <br>image: <%=paper.image%>
+        <br>location: <%=paper.location%>
+        <br>date: <%=paper.date%>
+        <br>time: <%=paper.time%>
+        <br>city: <%=paper.city%></li><br>
+    <%}%>
+    </ul> -->
+</body>

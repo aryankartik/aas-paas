@@ -1,0 +1,49 @@
+<%layout("./layout/boilerplate.ejs")%>
+ <body class="body-sports">
+  <h2 class="section-title">Latest Sports News</h2>
+
+  <!-- Slider Section -->
+  <div class="slider-wrapper">
+    <button class="slide-btn prev">&#10094;</button>
+    <div class="slider" id="news-slider">
+      <% sportsNews.slice(0, 5).forEach(news => { %>
+        <div class="slide">
+          <img src="<%= news.urlToImage %>" alt="<%= news.title %>" />
+          <div class="slide-info">
+            <h3><%= news.title %></h3>
+            <p><%= news.description %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <button class="slide-btn next">&#10095;</button>
+  </div>
+
+  <!-- News Boxes Below Slider -->
+  <div class="news-container">
+    <% sportsNews.slice(5).forEach(news => { %>
+      <div class="news-box">
+        <img src="<%= news.urlToImage %>" alt="news image" class="news-img" />
+        <h3 class="news-title"><%= news.title %></h3>
+        <p class="news-description"><%= news.description %></p>
+        <p class="news-source">Published at: <%= new Date(news.publishedAt).toLocaleString() %></p>
+      </div>
+    <% }) %>
+  </div>
+
+  <script>
+    const slider = document.getElementById('news-slider');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+

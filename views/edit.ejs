@@ -1,0 +1,48 @@
+<%layout("./layout/boilerplate.ejs")%>
+<br><br><br>
+<body class="body-edit">
+    <form action="/local/<%=findCity.city%>/<%=findCity.id%>/edit?_method=PUT" method="post" class="row-8 offset-3 from-edit ">
+            <div class="col-md-8">
+                <label for="title" class="form-label-edit ">Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" value="<%=findCity.title%>" required>
+            </div>
+            <br>
+            <div class="col-md-8">
+                <label for="description" class="form-label-edit">Description</label>
+                <textarea name="description" id="description" class="form-control" placeholder="Describe the event"
+                    style="height: 10rem;" required><%=findCity.description%></textarea>
+            </div>
+            <br>
+            <div class="col-md-8 ">
+                <label for="image" class="form-label-edit">Image URL</label>
+                <input type="text" class="form-control" id="image" name="image" placeholder="Enter URL for your image" value="<%=findCity.image%>">
+            </div>
+            <br>
+            <div class="col-md-8">
+                <label for="location" class="form-label-edit">Location</label>
+                <input type="text" class="form-control" id="location" name="location"
+                    placeholder="Where is the event taking place?" value="<%=findCity.location%>" required>
+            </div>
+            <br>
+            <div class="col-md-8">
+                <label for="date" class="form-label-edit">Date of Event</label>
+                <input type="date" class="form-control" id="date" name="date" value="<%=findCity.date%>" required>
+            </div>
+            <br>
+            <div class="col-md-8">
+                <label for="time" class="form-label-edit">Time of Event</label>
+                <input type="time" class="form-control" id="time" name="time" value="<%=findCity.time%>" required>
+            </div>
+            <br>
+            <div class="col-md-8">
+                <label for="city" class="form-label-edit">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="City" value="<%=findCity.city%>" required>
+            </div>
+            <br>
+            <div class="col-md-8">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+            <br><br><br>
+        
+    </form>
+</body>

@@ -1,0 +1,51 @@
+<%layout("./layout/boilerplate.ejs")%>
+
+<body class="new-body">
+    <br>
+    <h1 class="heading-form-new"><b>Got Something Big Planned? Let the World Know!</b></h1>
+    <br><br><br>
+    <form class="row-8 offset-3 " method="post" action="/new">
+        <div class="col-md-8">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" required>
+        </div>
+
+        <div class="col-md-8">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" id="description" class="form-control" placeholder="Describe the event"
+                style="height: 10rem;" required></textarea>
+        </div>
+
+        <div class="col-md-8">
+            <label for="image" class="form-label">Image URL</label>
+            <input type="text" class="form-control" id="image" name="image" placeholder="Enter URL for your image">
+        </div>
+
+        <div class="col-md-8">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" name="location"
+                placeholder="Where is the event taking place?" required>
+        </div>
+
+        <div class="col-md-8">
+            <label for="date" class="form-label">Date of Event</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+
+        <div class="col-md-8">
+            <label for="time" class="form-label">Time of Event</label>
+            <input type="time" class="form-control" id="time" name="time" required>
+        </div>
+
+        <div class="col-md-8">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+        </div>
+
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+    <br><br><br>
+</body>
+
