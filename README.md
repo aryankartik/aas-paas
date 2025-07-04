@@ -1,7 +1,6 @@
 # 🌐 Aas-Paas | Find What’s Around You
 
-We often miss out on local happenings — whether it's a community festival, a college event, or important alerts like unexpected weather changes.  
-**Aas-Paas** is built to solve that.
+We often miss out on local happenings — whether it's a community festival, a college event, or important alerts like unexpected weather changes — **Aas-Paas** is built to solve that.
 
 It’s a simple yet practical web platform that keeps you informed about events, announcements, and live weather updates from your surroundings.  
 
