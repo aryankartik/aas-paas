@@ -59,7 +59,7 @@ We are a team of 4 students who built Aas-Paas collaboratively:
 | Name             | Contribution                  |
 |------------------|-------------------------------|
 | **Aryan Kartik** | Frontend Design & Styling         |
-| **Vipul**         | Full-stack Integration    |
+| **Vipul**         | Full-Stack Integration    |
 | **Kaushal**       | Announcement Database & Layout |
 | **Anurag**        | Announcement Database & Layout |
 
