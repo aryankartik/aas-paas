@@ -1,10 +1,12 @@
 # 🌐 Aas-Paas | Find What’s Around You
 
-We often miss out on what's happening nearby — maybe a college fest, a local event, or even a critical weather alert.  
-That’s where **Aas-Paas** comes in.
+We often miss out on local happenings — whether it's a community festival, a college event, or important alerts like unexpected weather changes.  
+**Aas-Paas** is built to solve that.
 
-This is a simple, useful website that shows you what’s going on *around you* — from nearby events and announcements to live weather updates.  
-We built this platform as our **major college project**, aiming to solve a real-world problem in a clean and functional way.
+It’s a simple yet practical web platform that keeps you informed about events, announcements, and live weather updates from your surroundings.  
+
+This project was developed as part of our **capstone project**, with the aim of making local information easily accessible through a clean and user-friendly interface.
+
 
 ---
 
@@ -16,11 +18,12 @@ We built this platform as our **major college project**, aiming to solve a real-
 
 ## 💡 Why We Built This
 
-The idea came from a common frustration: updates about events were scattered across WhatsApp groups, notice boards, and random posters.
+We noticed a recurring issue — important local updates were scattered across too many places: WhatsApp groups, notice boards, and posters that often went unnoticed.
 
-So we thought — **why not make one platform** where users can view everything happening around them, just by selecting a city?
+This made it difficult for people to stay informed about what was happening around them.
 
-That’s how the concept of **Aas-Paas** was born.
+So, we decided to build **Aas-Paas** — a single platform where users can simply choose their city and instantly access all relevant updates, events, and alerts in one place.
+
 
 ---
 
