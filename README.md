@@ -1,88 +1,107 @@
-Aas-Pass | Find What’s Around You
+# 🌐 Aas-Paas | Find What’s Around You
 
-We often miss out on what's happening near us — maybe a local fest, a college event, or even a weather alert. That’s where **AAS-PAS** comes in.
+We often miss out on what's happening nearby — maybe a college fest, a local event, or even a critical weather alert.  
+That’s where **Aas-Paas** comes in.
 
 This is a simple, useful website that shows you what’s going on *around you* — from nearby events and announcements to live weather updates.  
-We created this platform as our major project during college, aiming to solve a very real problem in a clean and functional way.
+We built this platform as our **major college project**, aiming to solve a real-world problem in a clean and functional way.
 
 ---
 
-## 🚀 Try the Live Website
+## 🚀 Live Website
 
-👉 https://aas-pass-major-project.onrender.com/
+👉 [Try It Here](https://aas-pass-major-project.onrender.com/)
 
 ---
 
 ## 💡 Why We Built This
 
-The idea came from a common frustration: events and updates were scattered across WhatsApp groups, notice boards, and random posters.  
-So, we thought — why not make **one platform** where anyone can check everything happening near them, just by selecting a city?
+The idea came from a common frustration: updates about events were scattered across WhatsApp groups, notice boards, and random posters.
 
-That’s how the concept of Aas-Pass took shape.
+So we thought — **why not make one platform** where users can view everything happening around them, just by selecting a city?
+
+That’s how the concept of **Aas-Paas** was born.
 
 ---
 
 ## 🔧 Technologies & Tools
 
-This project was built using the MERN stack and a few external APIs.
+This project is built using the **MERN stack** and some helpful external APIs:
 
-- **Frontend:** HTML, CSS
+- **Frontend:** HTML, CSS  
+- **Templating Engine:** EJS  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB Atlas  
-- **Templating:** EJS  
 - **Deployment:** Render  
-- **APIs Used:**  
-  - AccuWeather API (for weather updates)  
-  - Newsorg.in API (to fetch local events)  
+
+**APIs Used:**
+- 🌤 [AccuWeather API](https://developer.accuweather.com/) – For live weather updates  
+- 📰 [Newsorg.in API](https://newsapi.org/) – To fetch local event-related news  
 
 ---
 
 ## 🔍 Main Features
 
-- 🌇 City selection to personalize your feed  
-- 📅 Events listing fetched live using APIs  
-- 🌦️ Weather info for selected city  
-- 📢 Announcement page powered by MongoDB  
-- ⚡ Smooth UI and user experience  
+- 🌇 City selection to personalize your local feed  
+- 📅 Live event listings via APIs  
+- 🌦️ Weather information for selected cities  
+- 📢 Admin-controlled announcements via MongoDB  
+- ⚡ Smooth UI for quick user access  
 
 ---
 
-## 🧑‍💻 Our Team
+## 👨‍💻 Our Team
 
-We are four teammates who divided the work based on our strengths:
+We are a team of 4 students who built Aas-Paas collaboratively:
 
-- **Vipul Kataria** – Full-stack integration
-- **Aryan** – Frontend styling  
-- **Kaushal** –   Announcement database and layout
-- **Anurag** – Announcement database and layout
+| Name             | Contribution                  |
+|------------------|-------------------------------|
+| **Vipul Kataria** | Full-stack integration         |
+| **Aryan**         | Frontend design and styling    |
+| **Kaushal**       | Announcement database & layout |
+| **Anurag**        | Announcement database & layout |
 
 ---
 
 ## 📖 What We Learned
 
-We didn't just build a website — we went through a lot:
+Throughout the project, we gained hands-on experience in:
 
-- Figuring out how to use APIs in real time  
-- Learning the MERN stack by applying it hands-on  
-- Debugging tough issues together as a team  
-- Making a smooth UI using React components  
-- Hosting and deploying a full-stack app using Render  
+- Working with real-time APIs
+- Applying the MERN stack in a real-world scenario
+- Writing clean and reusable backend code
+- Debugging and collaborating effectively
+- Deploying a full-stack app to the web
 
-📂 Simple File Structure
-📦 aas-pass-major-project/
-├── 📁 data/               # Contains JSON-formatted static data
-├── 📁 models/             # Mongoose schemas for MongoDB
-├── 📁 node_modules/       # Auto-generated npm packages
-├── 📁 public/             # Static files like CSS and images
-│   └── CSS                 # Main stylesheet
-├── 📁 routes/             # All the Express route handlers
-├── 📁 utils/              # Utility functions
-│   ├── errorHandler.js    # Centralized error handler
-│   └── wrapAsync.js       # Helper to catch async errors
-├── 📁 views/              # EJS templates for UI rendering
-│   ├── ejs templates for all pages
-├── .env                   # Environment variables (API keys, DB URI, etc.)
-├── .gitignore             # Files and folders to ignore in Git
-├── app.js                 # Main Express app entry point (links all routes)
-├── middleware.js          # Custom middleware functions
-└── schema.js 
+---
+
+## 📂 Project Structure
+
+aas-pass-major-project/
+├── data/ # Contains JSON-formatted static data
+├── models/ # Mongoose schemas for MongoDB
+├── node_modules/ # Auto-generated npm packages
+├── public/ # Static files like CSS and images
+│ └── CSS/ # Main stylesheet
+├── routes/ # All the Express route handlers
+├── utils/ # Utility functions
+│ ├── errorHandler.js
+│ └── wrapAsync.js
+├── views/ # EJS templates for UI rendering
+│ ├── *.ejs # Templates for all pages
+├── .env # Environment variables (API keys, DB URI, etc.)
+├── .gitignore # Ignored files/folders for Git
+├── app.js # Main Express app entry point
+├── middleware.js # Custom middleware functions
+└── schema.js # Additional schemas
+
+## 📬 Contact
+
+Want to give feedback or collaborate?  
+Feel free to [reach out](mailto:your.email@example.com) or connect on [GitHub](https://github.com/yourusername)!
+
+---
+
+> © 2025 Aas-Paas Team. Built with ❤️ as part of our college capstone project.
+
+
